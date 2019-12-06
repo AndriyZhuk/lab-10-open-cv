@@ -1,0 +1,43 @@
+body {
+    background-color: #fbf8e6;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #aaaaaa 50% 50% no-repeat;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal {
+    display: block;
+}
+
+.jumbotron h4 {
+    margin: 20px 0 10px;
+}
+
+.jumbotron .col-md-5 {
+    text-align: right;
+}
+
+.jumbotron .row p {
+    margin: 0;
+}
+
+.card-block.text-center {
+    min-height: 200px;
+}
+
+body .jumbotron {
+    padding: 1rem 3rem 0;
+    background: none;
+}

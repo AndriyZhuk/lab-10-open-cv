@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Лабороторна робота №10 - OpenCV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+		<h1><b>Лабораторна робота №10.</b></h1>
+        <h3>Розпізнавання об’єктів шляхом аналізу габаритних прямокутників</h3>
+        <h4><b>Мета роботи: </b>Навчитись розпізнавати об’єкти шляхом аналізу скруглених об'єктів. </h4>
+		<div class="row">
+			<div class="col-md-5"><b>Виконав:</b> </div>
+			<div class="col-md-7">
+				<p>Здобувач вищої освіти 2-го рівня. </p>
+				<p>спеціальності 122 «Комп’ютерні
+					науки (прикладна інформатика)»</p>
+				<p>Жук Андрій Леонідович</p></div>
+		</div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    Зображення для аналізу
+                </div>
+                <div class="card-block text-center">
+                    <img id="imageOriginal" alt="Завантажте малюнок для початку роботи" class="card-img-top"/>
+                </div>
+                <div class="card-footer text-muted">
+                    <input type="file" id="imageInput" name="file" class="inputfile"/>
+					<label for="file">Виберіть файл</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    Зображення, що аналізується
+                </div>
+                <div class="card-block">
+                    <canvas id="imageCanvas"></canvas>
+                </div>
+                <div class="card-footer">
+					<button type="button" id="circlesButton" class="btn btn-primary">Визначення круглих об`єктів</button>
+                    <button href="#" id="button" class="btn card-link">Скачати результат</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal"></div>
+<script src="script.js"></script>
+<script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+</body>
+</html>
